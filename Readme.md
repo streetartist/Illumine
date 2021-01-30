@@ -1,6 +1,13 @@
 # Illumine
 ## Use Illumine to build any website.
 
+# 我们的想法
+Python中一直没有像Wordpress这样的网站框架，所以我DIY了一个
+
+目标是让用户在不修改内核代码的情况下，通过编写插件电池主题，来编写网站
+
+创意：电池是事先编写好的网页框架（框架中的框架），加快编写速度
+
 # 代码正在上传……
 
 # 欢迎大家为Illumine编写插件电池主题！
