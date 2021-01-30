@@ -58,9 +58,9 @@ def myindex(using=""):
     the_plugins = plugins.dispose.Index_start()
     index_temp = env.get_template(os.sep.join(['theme',theme,'index.html']))
     if request.method=="POST":
-        return index_temp.render(hi="你好", plugins=the_plugins, request=request,using=using)
+        return index_temp.render(plugins=the_plugins, request=request,using=using)
     else:
-        return index_temp.render(hi="你好",plugins=the_plugins, request="",using=using)
+        return index_temp.render(plugins=the_plugins, request="",using=using)
 
 @app.route('/plugins/<name>')
 def the_plugins(name):
