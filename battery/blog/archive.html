@@ -1,0 +1,18 @@
+<!-- extend base layout -->
+{% extends "theme/goodold/base.html" %}
+
+{% block content %}
+<div class="blog">
+    {% for post in posts %}
+  <div class="conteudo">
+    <div class="post-info">
+       {{ post.time }}
+       <br>
+        {{ post.tag }}
+    </div>
+    <h1><a href="/post/{{ post.title }}">{{ post.title }} </a></h1>
+  </div>
+      {% endfor %}
+</div>
+
+{% endblock %}
