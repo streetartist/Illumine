@@ -2,7 +2,7 @@
 ## Use Illumine to build any website.
 
 # 文档
-https://github.com/streetartist/Illumine.wiki.git
+https://github.com/streetartist/Illumine/wiki
 
 # 我们的想法
 Python中一直没有像Wordpress这样的网站框架，所以我DIY了一个
