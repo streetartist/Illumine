@@ -1,4 +1,7 @@
 # Illumine
+
+[中文](https://github.com/streetartist/Illumine/READMEzh.md)
+
 ## Use Illumine to build any website.
 
 # Documentation
@@ -36,4 +39,4 @@ index.py main program
 flush.py cache flush
 
 # Version
--v 0.4.0
+- v 0.4.0
