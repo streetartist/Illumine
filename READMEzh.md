@@ -1,6 +1,6 @@
 # Illumine
 
-[英文](https://github.com/streetartist/Illumine/Readme.md)
+[英文](https://github.com/streetartist/Illumine)
 
 ## Use Illumine to build any website.
 
