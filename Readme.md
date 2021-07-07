@@ -1,39 +1,39 @@
 # Illumine
 ## Use Illumine to build any website.
 
-# 文档
+# Documentation
 https://github.com/streetartist/Illumine/wiki
 
-# 我们的想法
-Python中一直没有像Wordpress这样的网站框架，所以我DIY了一个
+# our thoughts
+There has never been a website framework like Wordpress in Python, so I DIY one
 
-目标是让用户在不修改内核代码的情况下，通过编写插件、电池、主题，来编写网站
+The goal is to allow users to write websites by writing plug-ins, batteries, and themes without modifying the kernel code.
 
-创意：电池是事先编写好的网页框架（框架中的框架），加快编写速度
+Creativity: The battery is a pre-written web page frame (frame in the frame) to speed up the writing speed
 
-欢迎大家为Illumine编写插件电池主题！
+Welcome everyone to write plug-in battery themes for Illumine!
 
-# 项目结构
+# Project structure
 
-/illumine Illumine核心库
+/illumine Illumine core library
 
-/plugin 插件
+/plugin plugin
 
-/admin 管理
+/admin Management
 
-/battery 电池
+/battery battery
 
-/engine 网页框架驱动（Flask、FastApi）
+/engine web framework driver (Flask, FastApi)
 
-/site 站点核心代码
+/site site core code
 
-/theme 主题
+/theme theme
 
-conf.ini 配置文件
+conf.ini configuration file
 
-index.py 主程序
+index.py main program
 
-flush.py 缓存刷新
+flush.py cache flush
 
-# 版本
-- v 0.4.0
+# Version
+-v 0.4.0
