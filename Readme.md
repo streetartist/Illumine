@@ -4,6 +4,8 @@
 
 ## Use Illumine to build any website.
 
+We will use the Any route
+
 # Documentation
 https://github.com/streetartist/Illumine/wiki
 
