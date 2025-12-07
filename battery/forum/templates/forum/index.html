@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Forum{% endblock %}
+
+{% block content %}
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+        <h1 style="margin: 0;">Forum Discussions</h1>
+    </div>
+
+    <div class="forum-list">
+        {% for topic in topics %}
+        <div class="custom-box" style="margin-bottom: 1rem; border-left-color: #fd7e14;">
+            <h3><a href="/forum/{{ topic.id }}">{{ topic.title }}</a></h3>
+            <a href="/forum/{{ topic.id }}" class="btn" style="font-size: 0.8rem; background: #fd7e14;">View Discussion</a>
+        </div>
+        {% else %}
+        <p>No topics yet.</p>
+        {% endfor %}
+    </div>
+    
+    <div class="custom-box" style="margin-top: 2rem; border-left-color: #17a2b8;">
+        <h3>Start New Topic</h3>
+        <form action="/forum/create" method="post" style="display: flex; flex-direction: column; gap: 10px;">
+            <input type="text" name="title" placeholder="Topic Title" required style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+            <textarea name="content" placeholder="What's on your mind?" rows="4" required style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+            <button type="submit" class="btn" style="background: #17a2b8; align-self: flex-start;">Post Topic</button>
+        </form>
+    </div>
+{% endblock %}

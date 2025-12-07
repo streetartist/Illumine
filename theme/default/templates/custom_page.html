@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Custom Page{% endblock %}
+
+{% block content %}
+    <div class="custom-box">
+        <h2>{{ title }}</h2>
+        <p>This page is rendered using a custom Jinja2 template.</p>
+        <p>Message: {{ message }}</p>
+    </div>
+{% endblock %}

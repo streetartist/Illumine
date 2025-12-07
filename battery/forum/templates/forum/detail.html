@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}{{ topic.title }}{% endblock %}
+
+{% block content %}
+    <div class="custom-box" style="border-left-color: #fd7e14;">
+        <h1>{{ topic.title }}</h1>
+        <div style="font-size: 1.1rem; margin-bottom: 2rem;">
+            {{ topic.content }}
+        </div>
+        
+        <a href="/forum" class="btn" style="background: #6c757d;">&larr; Back to Forum</a>
+    </div>
+    
+    <div style="margin-top: 2rem;">
+        {{ extra_content | safe }}
+    </div>
+{% endblock %}

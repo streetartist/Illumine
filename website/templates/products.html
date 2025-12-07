@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Our Products{% endblock %}
+
+{% block content %}
+    <div class="custom-box">
+        <h2>Our Products</h2>
+        <p>Check out our amazing products below:</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+            {% for product in products %}
+            <div style="border: 1px solid #ddd; padding: 15px; border-radius: 5px; background: #fff;">
+                <h3 style="margin-top: 0;">{{ product.name }}</h3>
+                <p>Original Price: <span style="text-decoration: line-through; color: #999;">${{ product.price }}</span></p>
+                <p style="color: #e74c3c; font-weight: bold; font-size: 1.2rem;">
+                    Sale Price: ${{ product.discounted_price }}
+                </p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

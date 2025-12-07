@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Blog{% endblock %}
+
+{% block content %}
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+        <h1 style="margin: 0;">Blog Posts</h1>
+    </div>
+
+    <div class="blog-list">
+        {% for post in posts %}
+        <div class="custom-box" style="margin-bottom: 1rem;">
+            <h3><a href="/blog/{{ post.id }}">{{ post.title }}</a></h3>
+            <p>{{ post.content[:100] }}...</p>
+            <a href="/blog/{{ post.id }}" class="btn" style="font-size: 0.8rem;">Read More</a>
+        </div>
+        {% else %}
+        <p>No posts yet.</p>
+        {% endfor %}
+    </div>
+    
+    <div class="custom-box" style="margin-top: 2rem; border-left-color: #28a745;">
+        <h3>Create New Post</h3>
+        <form action="/blog/create" method="post" style="display: flex; flex-direction: column; gap: 10px;">
+            <input type="text" name="title" placeholder="Post Title" required style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+            <textarea name="content" placeholder="Write your content here..." rows="4" required style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+            <button type="submit" class="btn" style="background: #28a745; align-self: flex-start;">Publish Post</button>
+        </form>
+    </div>
+{% endblock %}

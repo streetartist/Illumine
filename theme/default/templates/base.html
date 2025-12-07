@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Illumine Site{% endblock %}</title>
+    <link rel="stylesheet" href="/static/theme/style.css">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Illumine</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/blog">Blog</a>
+                <a href="/forum">Forum</a>
+                <a href="/admin">Admin</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <div class="container">
+            Powered by Illumine Framework
+        </div>
+    </footer>
+</body>
+</html>
